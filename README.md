@@ -2,7 +2,7 @@
 
 # UFWscripts
 
-This repository contains Uncomplicated Firewall (UFW) rules.  These rules were specifically developed for use on a Linux system running **```UFW```** UFW and are programmed using.
+This repository contains Uncomplicated Firewall (UFW) rules.  These rules were specifically developed for use on a Linux system running **```UFW```**.
 
 ---
 ---
