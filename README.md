@@ -9,10 +9,7 @@ This repository contains Uncomplicated Firewall (UFW) rules.  These rules were s
 
 ## Optional **SMART** Rules: 
 
-
-<br>
-
-##### SSH Rate Limit:
+#### SSH Rate Limit:
 ```
 ufw limit 22/tcp
 ```
@@ -21,7 +18,7 @@ ufw limit 22/tcp
 <br>
   
 
-##### Drop PING:
+#### Drop PING:
 ```
 ufw deny proto icmp
 ```
@@ -30,7 +27,7 @@ ufw deny proto icmp
 <br>
   
 
-##### Close Common Ports used for Malicious Activity:
+#### Close Common Ports used for Malicious Activity:
 ```
 ufw deny 23, ufw deny 445
 ```
@@ -38,20 +35,11 @@ ufw deny 23, ufw deny 445
 <br>
 <br>
 
-*]
-##### Force Encrypted Traffic:
+
+#### Force Encrypted Traffic:
 ```
 ufw deny 80/tcp
 ```
-[🗨️ **This forces traffic over HTTP/s for encryption*
-<br>
-<br>
-
-
-##### GeoLocation-IP Blocking:
-```
-ufw deny from IP_RANGE
-```
-[🗨️ **This blocks known regions with common malicious activity**]
+[🗨️ **This forces traffic over HTTP/s for encryption**]
 <br>
 <br>
