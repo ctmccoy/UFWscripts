@@ -12,42 +12,46 @@ This repository contains Uncomplicated Firewall (UFW) rules.  These rules were s
 
 <br>
 
-[🗨️ **This Prevents brute force by limiting SSH attempts**]
 ##### SSH Rate Limit:
 ```
 ufw limit 22/tcp
 ```
+[🗨️ **This Prevents brute force by limiting SSH attempts**]
 <br>
 <br>
   
-[🗨️ **This reduces the scanning surface by dropping ping requests**]
+
 ##### Drop PING:
 ```
 ufw deny proto icmp
 ```
+[🗨️ **This reduces the scanning surface by denying ICMP requests**]
 <br>
 <br>
   
-[🗨️ **This blocks remote connections and connections to/from legacy machines**]
+
 ##### Close Common Ports used for Malicious Activity:
 ```
 ufw deny 23, ufw deny 445
 ```
+[🗨️ **This blocks remote connections and connections to/from legacy machines**]
 <br>
 <br>
 
-[🗨️ **This forces traffic over HTTP/s for encryption**]
+*]
 ##### Force Encrypted Traffic:
 ```
 ufw deny 80/tcp
 ```
+[🗨️ **This forces traffic over HTTP/s for encryption*
 <br>
 <br>
 
-[🗨️ **This blocks known regions with common malicious activity**]
+
 ##### GeoLocation-IP Blocking:
 ```
 ufw deny from IP_RANGE
 ```
+[🗨️ **This blocks known regions with common malicious activity**]
 <br>
 <br>
